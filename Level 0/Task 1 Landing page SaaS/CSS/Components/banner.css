@@ -1,0 +1,58 @@
+#banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 4% 11%;
+    background: rgba(249, 249, 255, 1);
+}
+
+.banner-content {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
+}
+
+.banner-content .slide {
+    animation: 5s slide infinite linear;
+    display: inline-block;
+}
+.banner-content:hover .slide  {
+    /* transform: scale(1.1); */
+    animation: none;
+}
+
+.banner-content img {
+    transition: transform 0.5s ease-in-out;
+    height: 50px;
+    margin: 0 40px;
+
+}
+
+.banner-content .arrow {
+    cursor: pointer;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+        display: inline-block;
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* styles for mobile devices devices  */
+@media only screen and (max-width: 600px) {
+    #banner {
+        padding: 5%;
+    }
+}

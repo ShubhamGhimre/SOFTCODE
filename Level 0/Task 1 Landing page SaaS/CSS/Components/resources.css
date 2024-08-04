@@ -1,0 +1,86 @@
+#resources {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5% 11%;
+    background: rgba(249, 249, 255, 1);
+}
+
+#resources .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#resources .cards .card {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 352.91px;
+    height: 337.45px;
+    background-color: var(--white-color);
+    border-radius: 20px;
+
+}
+
+#resources .cards .card .card-icon {
+    padding: 10% 5% 0 5%;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    width: 100%;
+    /* gap: 5px; */
+}
+#resources .cards .card .card-content{
+    padding: 10% 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+}
+#resources .cards .card .card-content a{
+    padding: 10% 5% 0 5%;
+}
+#resources .cards .card .card-icon img {
+    padding: 5%;
+    border-radius: 10px;
+
+}
+
+#resources .cards .card .card-content p{
+    /* font-family: Inter; */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;   
+    display:  -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+#resources span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #66686D;
+    text-align: left;
+}
+
+/* styles for tablet devices */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #resources {
+        padding: 10% 0%;
+    }
+}
+
+/* styles for mobile devices devices  */
+@media only screen and (max-width: 600px){
+
+}

@@ -1,0 +1,97 @@
+#contactus {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5% 10%;
+}
+
+#contactus form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#contactus form div {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#contactus form .row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#contactus form .rows{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#contactus form div .row input {
+    width: 100%;
+}
+
+#contactus form .row input,
+#contactus form .row textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--text-small-color);
+    outline: none;
+}
+
+#contactus form .row label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    /* align-self: start; */
+    align-self: normal;
+}
+
+/* styles for tablet devices */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #contactus {
+    
+        padding: 5% 5%;
+    }
+
+    #contactus form div {
+   
+        width: 100%;
+    }
+    #contactus form .rows {
+        width: 100%;
+    }
+}
+
+/* styles for mobile devices devices  */
+@media only screen and (max-width: 600px){
+    #contactus {
+    
+        padding: 5% 5%;
+    }
+
+    #contactus form div {
+   
+        width: 100%;
+    }
+    #contactus form .rows {
+        width: 100%;
+    }
+}

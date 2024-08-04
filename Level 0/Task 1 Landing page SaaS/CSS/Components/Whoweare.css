@@ -1,0 +1,96 @@
+#who-we-are h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: left;
+}
+#who-we-are {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5% 0;
+}
+
+#who-we-are .container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+#who-we-are .intro{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#who-we-are .intro p{
+    text-align: left;
+}
+
+#who-we-are .images {
+    height: auto;
+    gap:3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#who-we-are .images .row{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* overflow: hidden; */
+}
+#who-we-are .images .row div{
+    overflow: hidden;
+    border-radius: 16px;
+    
+}
+#who-we-are .images .row div img{
+    width: 328px;
+    border-radius: 16px;
+    transition: transform 0.5s;
+}
+#who-we-are .images .row img:hover{
+    transform: scale(1.1)
+}
+
+#who-we-are .images .row .row_{
+    padding-top: 45%;
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #who-we-are .intro {
+        width: 100%;
+        justify-content: center;
+    }
+    #who-we-are h2 {
+        text-align: center;
+    }
+    #who-we-are .container{
+        flex-wrap: wrap;
+    }    
+}
+
+/* styles for mobile devices devices  */
+@media only screen and (max-width: 600px){
+    #who-we-are .intro {
+        width: 100%;
+    }
+    #who-we-are h2 {
+        text-align: center;
+    }
+    #who-we-are .images .row .row_ {
+        padding-top: 5%;
+    }
+    #who-we-are .container{
+        flex-wrap: wrap;
+    }
+    #who-we-are .images {
+        flex-wrap: wrap;
+    }
+}

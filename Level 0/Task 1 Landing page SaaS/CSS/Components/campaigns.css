@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+#campaigns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5% 0;
+     background: rgba(249, 249, 255, 1);
+    
+}
+
+#campaigns .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+#campaigns .cards .card {
+    width: 351.44px;
+    height: 596px;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#campaigns .cards .card img {
+    width: 352px;
+    height: 352px;
+    overflow: hidden;
+    /* border-radius:  21.82px, 21.82px, 0px, 0px; */
+}
+
+#campaigns .cards .card .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+    height: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#campaigns .cards .card .card-content h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+#campaigns .cards .card .card-content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    
+}
+
+/* styles for mobile devices devices  */
+@media only screen and (max-width: 600px){
+
+}
