@@ -22,3 +22,24 @@ if(close){
         
     });
 }
+
+// slider 
+
+const cards = document.querySelectorAll('.cards');
+const leftarrow = document.getElementById('left');
+const rightarrow = document.getElementById('right');
+
+leftarrow.addEventListener("click" , () => {
+    cards.forEach(card => {
+        const last = card.lastElementChild;
+        card.insertBefore(last , card.firstElementChild);
+
+    })
+})
+rightarrow.addEventListener("click" , () => {
+    console.log('clicked');
+    cards.forEach(card => {
+        const first = card.firstElementChild;
+        card.appendChild(first);
+    })
+})
