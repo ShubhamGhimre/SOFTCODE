@@ -1052,10 +1052,14 @@ p {
 
     
     /* contact me styles */
+    #contact-me h1 {
+        text-align: center;
+    }
     #footer .footer-links {
         padding: 0;
         width: 100%;
         gap: 9px;
+        flex-wrap: wrap;
     }
     
 
