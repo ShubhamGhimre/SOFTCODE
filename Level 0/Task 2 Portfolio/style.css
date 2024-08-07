@@ -1058,7 +1058,7 @@ p {
     #footer .footer-links {
         padding: 0;
         width: 100%;
-        gap: 9px;
+        gap: 30px;
         flex-wrap: wrap;
     }
     
