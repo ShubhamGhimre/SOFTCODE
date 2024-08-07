@@ -989,6 +989,10 @@ p {
     }
     #services p {
         width: 100%;
+
+    }
+    #services .card-content p {
+        height: 100%;
     }
     #services .container {
         flex-direction: column;
